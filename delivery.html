@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lush|Parlour</title>
+	<link rel="stylesheet" type="text/css" href="./css/conta.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="title">
+		    <h1>Fill your delivery details</h1>
+		  </div>
+	    <form action="" method="" onsubmit="return results();">
+	    	<div class="input-fields">
+		      <input type="text" id="name" class="input" placeholder="Name" required="">
+		      <input type="text" id="email" class="input" placeholder="Email Address" required="">
+		      <input type="text" id="phone" class="input" placeholder="Phone" required="">
+		      <input type="text" id="area" class="input" placeholder="Location" required="">
+		      <textarea id="message" placeholder="Additional delivery information"></textarea>
+		      <button type="submit" id="submit">Send</button>
+		      <p><a href="index.html">Home</a>
+		    </div>
+	    </form>
+
+	    <script type="text/javascript">
+	    	function results(){
+	    		var name= document.getElementById('name').value;
+	    		var phone=document.getElementById('phone').value;
+	    		var area=document.getElementById('area').value;
+	    		var message=document.getElementById('message').value;
+
+	    		document.write("<h1>Thank you for shopping at Lush|Parlour</h1>");
+	    		document.write("<p>Your order has been received and is being processed. Your'll be notified via phone call on the number provided.</p>");
+	    		document.write("<h2>Here's the details provided</h2>");
+	    		document.write(name + "<br>");
+	    		document.write(phone + "<br>");
+	    		document.write(area + "<br>");
+	    		document.write(message + "<br>");
+	    	}	
+	    </script>
+    </div>
+</body>
+</html>
